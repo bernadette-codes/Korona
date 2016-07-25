@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hairstyles | Korona Hair Salon</title>
+    <meta name="description" content="hair salon website">
+    <meta name="keywords" content="website project, bootstrap project">
+    <meta name="author" content="Bernadette Engleman">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="js/bootstrap.js"></script>
+</head>
+
+<body>
+
+<!-- Header -->
+<nav class="container">
+
+    <!-- Brand Image-->
+    <div>
+        <img src="img/Korona.jpg" alt="Korona Hair Salon Logo" class="img-responsive brandimg">
+    </div>
+
+    <!-- Menu -->
+    <div class="menuHolder">
+        <ul>
+            <li><a href="salon.html">Salon</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#">Hairstyles</a></li>
+        </ul>
+    </div>
+
+</nav>
+
+<!-- Hairstyle Gallery -->
+<section class="container background">
+
+    <h3 class="text-center top">Our Salon</h3>
+
+    <!-- row 1-->
+    <div class="row top">
+        <div class="col-sm-2 col-md-2 col-lg-2 col-xs-4">
+            <div class="thumbnail">
+                <img src="img/hairtsyle1.jpg" alt="Women Hairstyle Shoulder Length" class="img-responsive">
+            </div>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2 col-xs-4">
+            <div class="thumbnail">
+                <img src="img/hairtsyle2.jpg" alt="Women Hairstyle Shoulder Length" class="img-responsive">
+            </div>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2 col-xs-4">
+            <div class="thumbnail">
+                <img src="img/hairtsyle3.jpg" alt="Women Hairstyle Shoulder Length" class="img-responsive">
+            </div>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2 col-xs-4">
+            <div class="thumbnail">
+                <img src="img/hairtsyle4.jpg" alt="Women Hairstyle Long" class="img-responsive">
+            </div>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2 col-xs-4">
+            <div class="thumbnail">
+                <img src="img/hairtsyle5.jpg" alt="Women Hairstyle Long" class="img-responsive">
+            </div>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2 col-xs-4">
+            <div class="thumbnail">
+                <img src="img/hairtsyle6.jpg" alt="Women Hairstyle Long" class="img-responsive">
+            </div>
+        </div>
+    </div>
+
+    <!-- row 2-->
+    <div class="row top">
+        <div class="col-sm-2 col-md-2 col-lg-2 col-xs-4">
+            <div class="thumbnail">
+                <img src="img/hairtsyle12.jpg" alt="Men Hairstyle" class="img-responsive">
+            </div>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2 col-xs-4">
+            <div class="thumbnail">
+                <img src="img/hairtsyle7.jpg" alt="Men Hairstyle" class="img-responsive">
+            </div>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2 col-xs-4">
+            <div class="thumbnail">
+                <img src="img/hairtsyle11.jpg" alt="Men Hairstyle" class="img-responsive">
+            </div>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2 col-xs-4">
+            <div class="thumbnail">
+                <img src="img/hairtsyle8.jpg" alt="Men Hairstyle" class="img-responsive">
+            </div>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2 col-xs-4">
+            <div class="thumbnail">
+                <img src="img/hairtsyle10.jpg" alt="Men Hairstyle" class="img-responsive">
+            </div>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2 col-xs-4">
+            <div class="thumbnail">
+                <img src="img/hairtsyle9.jpg" alt="Men Hairstyle" class="img-responsive">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer class="container-fluid text-center top">
+    <div class="row top">
+        <div class="col-xs-12">
+            <p>
+                <span class="salonName">Korona Hair Salon</span><br>
+                <span class="address">45 Rockefeller Plaza, New York, NY 10111</span>
+            </p>
+            <p>Copyright ©
+                <span id="year"></span> Korona Hair Salon. All rights reserved.<br>
+				<span class="small">Designed and created by:
+					<a href="http://bernadetteengleman.com/" target="_blank">B. Engleman</a>
+				</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Copyright Year
+    var d = new Date(), n = d.getFullYear();
+    document.getElementById("year").innerHTML = n;
+</script>
+
+<script src="js/jquery.js"></script>
+</body>
+
+</html>
