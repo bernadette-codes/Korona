@@ -1,0 +1,243 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: block;
+	padding: 0 0 100px;
+}
+
+/* Header */
+nav {
+	height: 140px;
+}
+
+/* Brand Image */
+.brandimg {
+	display: block;
+	width: 250px;
+	padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Nav bar */
+.menuHolder {
+	display: block;	
+}
+ 
+ul {
+	display: block;
+	font-size: 20px;
+	font-family: Arial, Tahoma, sans-serif; 
+	padding-top: 20px;	
+	text-align: center;	
+}
+
+li {
+	list-style: none;
+	display: inline; 		
+}
+
+.menuHolder a {
+	padding: 5px 30px;
+}
+
+.menuHolder a:hover,
+a:focus {
+	color: #FFFFFF; 
+	background-color: #BEBEBE;
+}
+
+
+/* Homepage */
+.homepage {
+	position: absolute; 
+}
+
+/* Slideshow Photos */
+#img1, #img2, #img3, #img4, #img5 {
+    width: 95%;
+	position: fixed;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+    z-index:-1;
+	animation-name: photos;
+ 	-webkit-animation-name: photos;	
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+    opacity: 0;
+	animation-duration: 4s;
+	-webkit-animation-duration: 4s;
+}
+
+#img3 {
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+}
+
+#img4 {
+    animation-delay:4s;
+    -webkit-animation-delay: 4s;
+}
+
+#img2 {
+    animation-delay: 6s;
+    -webkit-animation-delay:6s;
+}
+
+#img5 {
+    animation-delay: 8s;
+    -webkit-animation-delay:8s;
+}
+
+@-webkit-keyframes photos {
+	0% {opacity: 0;}
+	30% {opacity: 1;}
+	70% {opacity: 1;}
+	100% {opacity: 0;}
+ }
+ 
+@keyframes photos {
+	0% {opacity: 0;}
+	30% {opacity: 1;}
+	70% {opacity: 1;}
+	100% {opacity: 0;}
+ }
+
+/* All Pages */
+.background {
+	height: auto;
+	background-image: url(img/background.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	padding-top: 30px;
+	padding-bottom: 30px;
+ }
+
+.indent {
+	text-indent: 100px;
+}
+
+.top {
+	padding-top: 10px;
+}
+
+/* Salon */
+.about {
+	font-size: 1.3em;
+	line-height: 1.5em;
+	text-indent: 50px;
+	text-align: justify;
+	padding: 20px 10%;
+
+}
+
+/* Services */
+.servicesphoto {
+	width: 80%;
+	padding-top: 10%;
+	padding-left: 10%; 	
+}
+
+.services {
+	font-size: 1.3em;
+}
+
+.services li {
+	display: block;
+	line-height: 30px; 
+	border-bottom: thin solid #B0B0B0;
+	text-align: left;
+	padding-left: 20px;
+}
+
+.prices {
+	font-size: 0.8em;
+	float: right;
+	padding-right: 20px;
+}
+
+/* Footer */
+footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 100px;
+	width: 100%;
+}
+
+.salonName {
+	font-size: large;
+}
+
+.address {
+	font-size: medium;
+}
+
+footer p a {
+	color: #303030;
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 750px) {
+	.about {
+		font-size: 1.2em;
+		padding-left: 7%;
+		padding-right: 7%;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.about {
+		font-size: 1.1em;
+	}
+	.background h3 {
+		font-size: 20px;
+	}
+	.background h4 {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.about {
+		font-size: 1em;
+	}
+	.background h3 {
+		font-size: 18px;
+	}
+	.background h4 {
+		font-size: 16px;
+	}
+	ul {
+		font-size: 15px;
+	}
+	.menuHolder a {
+		padding: 5px 15px;
+	}
+
+}
+
+@media screen and (max-width: 350px) {
+	.about {
+		font-size: 0.9em;
+	}
+	.background h3 {
+		font-size: 16px;
+	}
+	.background h4 {
+		font-size: 14px;
+	}
+}
