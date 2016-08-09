@@ -58,7 +58,6 @@ a:focus {
 	background-color: #BEBEBE;
 }
 
-
 /* Homepage */
 .homepage {
 	position: absolute; 
@@ -182,7 +181,7 @@ footer {
 	font-size: large;
 }
 
-.address {
+address {
 	font-size: medium;
 }
 
