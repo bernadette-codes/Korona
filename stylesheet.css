@@ -167,6 +167,30 @@ a:focus {
 	padding-right: 20px;
 }
 
+/* Hairstyle */
+#slider {
+	margin: 20px 0 25px;
+}
+
+.hide-bullets {
+	list-style: none;
+	margin-left: -40px;
+	margin-top: 20px;
+}
+
+.thumbnail {
+	padding: 0;
+}
+
+.thumbnail img, .active.item img {
+	border-radius: 3px;
+}
+
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+	width: 100%;
+}
+
 /* Footer */
 footer {
 	position: absolute;
@@ -225,6 +249,7 @@ footer p a {
 	.menuHolder a {
 		padding: 5px 15px;
 	}
+
 }
 
 @media screen and (max-width: 350px) {
