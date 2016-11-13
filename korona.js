@@ -4,11 +4,12 @@ var d = new Date(),
 document.getElementById("year").innerHTML = n;
 
 $(document).ready(function(){
-    // Window Height
-    var windowHeight=$(window).height();
-    $(window).height(windowHeight+"px");
 
-    var windowWidth=$(window).width();
+    var windowHeight = $(window).height(),
+        windowWidth = $(window).width();
+
+    // Window Height
+    $(window).height(windowHeight+"px");
     //alert(windowWidth);
 
     // Carousel Photos
