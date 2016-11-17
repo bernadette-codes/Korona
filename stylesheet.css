@@ -230,6 +230,8 @@ footer p a {
 @media screen and (max-width: 900px) {
 	.container.slideshow {
 		margin: 8% auto;
+		width: 380px;
+		height: 235px;
 		perspective: 900px;
 	}
 }
@@ -260,7 +262,22 @@ footer p a {
 	}
 }
 
+@media screen and (max-width: 600px) {
+	.container.slideshow {
+		margin: 16% auto;
+		width: 280px;
+		height: 175px;
+		perspective: 600px;
+	}
+}
+
 @media screen and (max-width: 550px) {
+	.container.slideshow {
+		margin: 13% auto;
+		width: 200px;
+		height: 125px;
+		perspective: 550px;
+	}
 	.about {
 		font-size: 1.1em;
 	}
@@ -273,6 +290,15 @@ footer p a {
 }
 
 @media screen and (max-width: 450px) {
+	.container.slideshow {
+		margin: 13% auto;
+		width: 140px;
+		height: 90px;
+		perspective: 450px;
+	}
+	#carousel figure {
+		border-width: 2px;
+	}
 	.about {
 		font-size: 1em;
 	}
@@ -288,10 +314,15 @@ footer p a {
 	.menuHolder a {
 		padding: 5px 15px;
 	}
-
 }
 
 @media screen and (max-width: 350px) {
+	.container.slideshow {
+		margin: 15% auto;
+		width: 120px;
+		height: 75px;
+		perspective: 350px;
+	}
 	.about {
 		font-size: 0.9em;
 	}
