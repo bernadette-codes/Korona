@@ -71,7 +71,7 @@ a:focus {
 
 /* Homepage Slideshow Photos */
 .container.slideshow {
-	margin: 4% auto;
+	margin: 5% auto;
 	width: 400px;
 	height: 250px;
 	position: relative;
@@ -104,7 +104,7 @@ figure img {
 	left: 10px;
 	top: 10px;
 	overflow: hidden;
-	border: solid 5px black;
+	border: solid 5px #BEBEBE;
 }
 
 #carousel figure:nth-child(1) { transform: rotateY(0deg) translateZ(288px); }
@@ -221,11 +221,42 @@ footer p a {
 	text-decoration: underline;
 }
 
+@media screen and (max-width: 1150px) {
+	.container.slideshow {
+		margin: 7% auto;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.container.slideshow {
+		margin: 8% auto;
+		perspective: 900px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.container.slideshow {
+		margin: 10% auto;
+		width: 360px;
+		height: 225px;
+		perspective: 800px;
+	}
+}
+
 @media screen and (max-width: 750px) {
 	.about {
 		font-size: 1.2em;
 		padding-left: 7%;
 		padding-right: 7%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.container.slideshow {
+		margin: 12% auto;
+		width: 320px;
+		height: 200px;
+		perspective: 700px;
 	}
 }
 
