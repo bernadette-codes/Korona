@@ -6,14 +6,15 @@ document.getElementById("year").innerHTML = n;
 $(document).ready(function(){
 
     var windowHeight = $(window).height(),
-        windowWidth = $(window).width();
+        windowWidth = $(window).width(),
+        myCarousel = $("#myCarousel");
 
     // Window Height
     $(window).height(windowHeight+"px");
     //alert(windowWidth);
 
     // Carousel Photos
-    $("#myCarousel").carousel({interval: 2000});
+    myCarousel.carousel({interval: 2000});
 
     // Carousel Thumbnails
     $('[id^=carousel-selector-]').click(function() {
@@ -21,7 +22,7 @@ $(document).ready(function(){
         try {
             var id = /-(\d+)$/.exec(id_selector)[1];
             console.log(id_selector, id);
-            jQuery('#myCarousel').carousel(parseInt(id));
+            myCarousel.carousel(parseInt(id));
         } catch (e) {
             console.log('Regex failed!', e);
         }
