@@ -26,5 +26,5 @@ $(document).ready(function(){
         } catch (e) {
             console.log('Regex failed!', e);
         }
-    });
-});
+    }); // end click
+}); // end ready
