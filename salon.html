@@ -9,6 +9,7 @@
 	<meta name="description" content="hair salon website">
 	<meta name="keywords" content="website project, bootstrap project">
 	<meta name="author" content="Bernadette Engleman">
+	<link rel="shortcut icon" href="../../img/beIcon.png">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="stylesheet.css">
 </head>
@@ -16,30 +17,29 @@
 <body>
 
 <!-- Header -->
-<nav class="container">
+<header class="container-fluid">
+	<h1>Korona Hair Salon</h1>
 
 	<!-- Brand Image-->
-	<div>
-		<img src="img/korona.jpg" alt="Korona Hair Salon Logo" width="250" class="img-responsive brandimg">
-	</div>
+	<img src="img/korona.jpg" alt="Korona Hair Salon Logo" width="250" class="img-responsive brandimg">
 
 	<!-- Menu -->
-	<div class="menuHolder">
+	<nav class="container-fluid" id="navbarbtn">
 		<ul>
-			<li><a href="#">Salon</a></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="salon.html">Salon</a></li>
 			<li><a href="services.html">Services</a></li>
 			<li><a href="hairstyle.html">Hairstyles</a></li>
 		</ul>
-	</div>
-
-</nav>
+	</nav>
+</header>
 
 <!-- Content -->
-<section class="container background">
-	<h3 class="text-center top">Our Salon</h3>
+<main class="container background text-center">
+	<h2>Our Salon</h2>
 
 	<!-- Salon Photos top-->
-	<div class="row top">
+	<div class="row grid">
 		<div class="col-xs-6">
 			<div class="thumbnail">
 				<img src="img/salon1.jpg" alt="Salon1" class="img-responsive">
@@ -51,51 +51,48 @@
 			</div>
 		</div>
 	</div>
+	<div id="overlay"></div>
+	<div id="overlayContent">
+		<img id="imgBig" src="" alt="Salon"/>
+	</div>
 
-	<h3 class="text-center">Location</h3>
-	<h4 class="text-center">45 Rockefeller Plaza, New York, NY 10111</h4>
+	<section>
+		<h3>Location</h3>
+		<p class="details">45 Rockefeller Plaza, New York, NY 10111</p>
 
-	<h3 class="text-center top">Hours</h3>
-	<h4 class="text-center">Open every day from 10:00 am to 8:00 pm.</h4>
+		<h3>Hours</h3>
+		<p class="details">Open every day from 10:00 am to 8:00 pm.</p>
 
-	<!-- About  -->
-	<div class="text-center about">
-		<p >The success of Korona hair salon not only lies in our commitment to working in a cleaner,
+		<p class="about">The success of Korona hair salon not only lies in our commitment to working in a cleaner,
 			healthier environment but in the talent and expertise of our stylists.
 			Each stylist that works at Korona, has years of experience working in many different aspects of the industry.
 			Their vast knowledge is applied to each and every client and the results show it.</p>
-	</div>
+	</section>
 
 	<!-- Salon Photos bottom-->
-	<div class="row">
-		<div class="col-xs-6 top">
+	<div class="row grid">
+		<div class="col-xs-6">
 			<div class="thumbnail">
 				<img src="img/salon3.jpg" alt="Salon1" class="img-responsive">
 			</div>
 		</div>
-		<div class="col-xs-6 top">
+		<div class="col-xs-6">
 			<div class="thumbnail">
 				<img src="img/salon4.jpg" alt="Salon2" class="img-responsive">
 			</div>
 		</div>
 	</div>
-
-</section>
+</main>
 
 <!-- Footer -->
-<footer class="container-fluid text-center top">
-	<div class="row top">
-		<div class="col-xs-12">
-			<p class="salonName">Korona Hair Salon</p>
-			<address>45 Rockefeller Plaza, New York, NY 10111</address>
-			<p><small>Copyright ©
-				<span id="year"></span> Korona Hair Salon. All rights reserved.<br>
-				<span class="small">Designed and created by:
-					<a href="http://bernadetteengleman.com/" target="_blank">B. Engleman</a>
-				</span>
-			</small></p>
-		</div>
-	</div>
+<footer class="container-fluid text-center">
+	<p class="salonName">Korona Hair Salon</p>
+	<address>45 Rockefeller Plaza, New York, NY 10111</address>
+	<p><small>Copyright © <span id="year"></span> Korona Hair Salon. All rights reserved.<br>
+		<span class="small">Designed and created by:
+			<a href="../../index.html" target="_blank">Bernadette Engleman</a><small>&#128279;</small>
+		</span>
+	</small></p>
 </footer>
 
 <script src="js/jquery.js"></script>
