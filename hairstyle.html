@@ -9,6 +9,7 @@
     <meta name="description" content="hair salon website">
     <meta name="keywords" content="website project, bootstrap project">
     <meta name="author" content="Bernadette Engleman">
+    <link rel="shortcut icon" href="../../img/beIcon.png">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="stylesheet.css">
 </head>
@@ -16,175 +17,158 @@
 <body>
 
 <!-- Header -->
-<nav class="container">
+<header class="container-fluid">
+    <h1>Korona Hair Salon</h1>
 
     <!-- Brand Image-->
-    <div>
-        <img src="img/korona.jpg" alt="Korona Hair Salon Logo" width="250" class="img-responsive brandimg">
-    </div>
+    <img src="img/korona.jpg" alt="Korona Hair Salon Logo" width="250" class="img-responsive brandimg">
 
     <!-- Menu -->
-    <div class="menuHolder">
+    <nav class="container-fluid" id="navbarbtn">
         <ul>
+            <li><a href="index.html">Home</a></li>
             <li><a href="salon.html">Salon</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="#">Hairstyles</a></li>
+            <li><a href="hairstyle.html">Hairstyles</a></li>
         </ul>
-    </div>
-
-</nav>
+    </nav>
+</header>
 
 <!-- Hairstyle Gallery -->
-<section class="container background">
+<main class="container background">
+    <h2 class="text-center">Hairstyles</h2>
 
-    <h3 class="text-center top">Our Salon</h3>
-
-    <div id="main_area">
-        <!-- Slider -->
-        <div class="row">
-
-            <div class="col-xs-8 col-sm-6">
-                <div class="col-xs-12" id="slider">
-                    <!-- Top part of the slider -->
-                    <div class="row">
-                        <div class="col-sm-12" id="carousel-bounding-box">
-                            <div class="carousel slide" id="myCarousel">
-                                <!-- Carousel items -->
-                                <div class="carousel-inner">
-                                    <div class="active item" data-slide-number="0">
-                                        <img src="img/hairtsyle1.jpg" alt="Women Hairstyle Shoulder Length">
-                                    </div>
-                                    <div class="item" data-slide-number="1">
-                                        <img src="img/hairtsyle2.jpg" alt="Women Hairstyle Shoulder Length">
-                                    </div>
-                                    <div class="item" data-slide-number="2">
-                                        <img src="img/hairtsyle3.jpg" alt="Women Hairstyle Shoulder Length" class="img-responsive">
-                                    </div>
-                                    <div class="item" data-slide-number="3">
-                                        <img src="img/hairtsyle4.jpg" alt="Women Hairstyle Long">
-                                    </div>
-                                    <div class="item" data-slide-number="4">
-                                        <img src="img/hairtsyle5.jpg" alt="Women Hairstyle Long">
-                                    </div>
-                                    <div class="item" data-slide-number="5">
-                                        <img src="img/hairtsyle6.jpg" alt="Women Hairstyle Long">
-                                    </div>
-                                    <div class="item" data-slide-number="6">
-                                        <img src="img/hairtsyle12.jpg" alt="Men Hairstyle">
-                                    </div>
-                                    <div class="item" data-slide-number="7">
-                                        <img src="img/hairtsyle7.jpg" alt="Men Hairstyle">
-                                    </div>
-                                    <div class="item" data-slide-number="8">
-                                        <img src="img/hairtsyle11.jpg" alt="Men Hairstyle">
-                                    </div>
-                                    <div class="item" data-slide-number="9">
-                                        <img src="img/hairtsyle8.jpg" alt="Men Hairstyle">
-                                    </div>
-                                    <div class="item" data-slide-number="10">
-                                        <img src="img/hairtsyle10.jpg" alt="Men Hairstyle">
-                                    </div>
-                                    <div class="item" data-slide-number="11">
-                                        <img src="img/hairtsyle9.jpg" alt="Men Hairstyle">
-                                    </div>
-                                </div>
-                                <!-- Carousel nav -->
-                                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                                    <span class="glyphicon glyphicon-chevron-left"></span>
-                                </a>
-                                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                                    <span class="glyphicon glyphicon-chevron-right"></span>
-                                </a>
-                            </div>
-                        </div>
+    <!-- Slider -->
+    <div class="row">
+        <div class="col-xs-8 col-sm-6" id="slider">
+            <!-- Top part of the slider -->
+            <div class="carousel slide" id="myCarousel">
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="active item" data-slide-number="0">
+                        <img src="img/hairtsyle1.jpg" alt="Women Hairstyle Shoulder Length">
+                    </div>
+                    <div class="item" data-slide-number="1">
+                        <img src="img/hairtsyle2.jpg" alt="Women Hairstyle Shoulder Length">
+                    </div>
+                    <div class="item" data-slide-number="2">
+                        <img src="img/hairtsyle3.jpg" alt="Women Hairstyle Shoulder Length" class="img-responsive">
+                    </div>
+                    <div class="item" data-slide-number="3">
+                        <img src="img/hairtsyle4.jpg" alt="Women Hairstyle Long">
+                    </div>
+                    <div class="item" data-slide-number="4">
+                        <img src="img/hairtsyle5.jpg" alt="Women Hairstyle Long">
+                    </div>
+                    <div class="item" data-slide-number="5">
+                        <img src="img/hairtsyle6.jpg" alt="Women Hairstyle Long">
+                    </div>
+                    <div class="item" data-slide-number="6">
+                        <img src="img/hairtsyle12.jpg" alt="Men Hairstyle">
+                    </div>
+                    <div class="item" data-slide-number="7">
+                        <img src="img/hairtsyle7.jpg" alt="Men Hairstyle">
+                    </div>
+                    <div class="item" data-slide-number="8">
+                        <img src="img/hairtsyle11.jpg" alt="Men Hairstyle">
+                    </div>
+                    <div class="item" data-slide-number="9">
+                        <img src="img/hairtsyle8.jpg" alt="Men Hairstyle">
+                    </div>
+                    <div class="item" data-slide-number="10">
+                        <img src="img/hairtsyle10.jpg" alt="Men Hairstyle">
+                    </div>
+                    <div class="item" data-slide-number="11">
+                        <img src="img/hairtsyle9.jpg" alt="Men Hairstyle">
                     </div>
                 </div>
-            </div>
-
-            <div class="col-xs-4 col-sm-6" id="slider-thumbs">
-                <!-- Bottom switcher of slider -->
-                <ul class="hide-bullets">
-                    <li class="col-xs-6 col-sm-4">
-                        <a class="thumbnail" id="carousel-selector-0">
-                            <img src="img/hairtsyle1.jpg" alt="Women Hairstyle Shoulder Length">
-                        </a>
-                    </li>
-                    <li class="col-xs-6 col-sm-4">
-                        <a class="thumbnail" id="carousel-selector-1">
-                            <img src="img/hairtsyle2.jpg" alt="Women Hairstyle Shoulder Length">
-                        </a>
-                    </li>
-                    <li class="col-xs-6 col-sm-4">
-                        <a class="thumbnail" id="carousel-selector-2">
-                            <img src="img/hairtsyle3.jpg" alt="Women Hairstyle Shoulder Length" class="img-responsive">
-                        </a>
-                    </li>
-                    <li class="col-xs-6 col-sm-4">
-                        <a class="thumbnail" id="carousel-selector-3">
-                            <img src="img/hairtsyle4.jpg" alt="Women Hairstyle Long">
-                        </a>
-                    </li>
-                    <li class="col-xs-6 col-sm-4">
-                        <a class="thumbnail" id="carousel-selector-4">
-                            <img src="img/hairtsyle5.jpg" alt="Women Hairstyle Long">
-                        </a>
-                    </li>
-                    <li class="col-xs-6 col-sm-4">
-                        <a class="thumbnail" id="carousel-selector-5">
-                            <img src="img/hairtsyle6.jpg" alt="Women Hairstyle Long">
-                        </a>
-                    </li>
-                    <li class="col-xs-6 col-sm-4">
-                        <a class="thumbnail" id="carousel-selector-6">
-                            <img src="img/hairtsyle12.jpg" alt="Men Hairstyle">
-                        </a>
-                    </li>
-                    <li class="col-xs-6 col-sm-4">
-                        <a class="thumbnail" id="carousel-selector-7">
-                            <img src="img/hairtsyle7.jpg" alt="Men Hairstyle">
-                        </a>
-                    </li>
-                    <li class="col-xs-6 col-sm-4">
-                        <a class="thumbnail" id="carousel-selector-8">
-                            <img src="img/hairtsyle11.jpg" alt="Men Hairstyle">
-                        </a>
-                    </li>
-                    <li class="col-xs-6 col-sm-4">
-                        <a class="thumbnail" id="carousel-selector-9">
-                            <img src="img/hairtsyle8.jpg" alt="Men Hairstyle">
-                        </a>
-                    </li>
-                    <li class="col-xs-6 col-sm-4">
-                        <a class="thumbnail" id="carousel-selector-10">
-                            <img src="img/hairtsyle10.jpg" alt="Men Hairstyle">
-                        </a>
-                    </li>
-                    <li class="col-xs-6 col-sm-4">
-                        <a class="thumbnail" id="carousel-selector-11">
-                            <img src="img/hairtsyle9.jpg" alt="Men Hairstyle">
-                        </a>
-                    </li>
-                </ul>
+                <!-- Carousel nav -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
             </div>
         </div>
-    </div>
 
-</section>
+        <div class="col-xs-4 col-sm-6" id="slider-thumbs">
+            <!-- Bottom switcher of slider -->
+            <ul class="hide-bullets">
+                <li class="col-xs-6 col-sm-4">
+                    <a class="thumbnail" id="carousel-selector-0">
+                        <img src="img/hairtsyle1.jpg" alt="Women Hairstyle Shoulder Length">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4">
+                    <a class="thumbnail" id="carousel-selector-1">
+                        <img src="img/hairtsyle2.jpg" alt="Women Hairstyle Shoulder Length">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4">
+                    <a class="thumbnail" id="carousel-selector-2">
+                        <img src="img/hairtsyle3.jpg" alt="Women Hairstyle Shoulder Length" class="img-responsive">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4">
+                    <a class="thumbnail" id="carousel-selector-3">
+                        <img src="img/hairtsyle4.jpg" alt="Women Hairstyle Long">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4">
+                    <a class="thumbnail" id="carousel-selector-4">
+                        <img src="img/hairtsyle5.jpg" alt="Women Hairstyle Long">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4">
+                    <a class="thumbnail" id="carousel-selector-5">
+                        <img src="img/hairtsyle6.jpg" alt="Women Hairstyle Long">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4">
+                    <a class="thumbnail" id="carousel-selector-6">
+                        <img src="img/hairtsyle12.jpg" alt="Men Hairstyle">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4">
+                    <a class="thumbnail" id="carousel-selector-7">
+                        <img src="img/hairtsyle7.jpg" alt="Men Hairstyle">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4">
+                    <a class="thumbnail" id="carousel-selector-8">
+                        <img src="img/hairtsyle11.jpg" alt="Men Hairstyle">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4">
+                    <a class="thumbnail" id="carousel-selector-9">
+                        <img src="img/hairtsyle8.jpg" alt="Men Hairstyle">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4">
+                    <a class="thumbnail" id="carousel-selector-10">
+                        <img src="img/hairtsyle10.jpg" alt="Men Hairstyle">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4">
+                    <a class="thumbnail" id="carousel-selector-11">
+                        <img src="img/hairtsyle9.jpg" alt="Men Hairstyle">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>
 
 <!-- Footer -->
-<footer class="container-fluid text-center top">
-    <div class="row top">
-        <div class="col-xs-12">
-            <p class="salonName">Korona Hair Salon</p>
-            <address>45 Rockefeller Plaza, New York, NY 10111</address>
-            <p><small>Copyright ©
-                <span id="year"></span> Korona Hair Salon. All rights reserved.<br>
-				<span class="small">Designed and created by:
-					<a href="http://bernadetteengleman.com/" target="_blank">B. Engleman</a>
-				</span>
-            </small></p>
-        </div>
-    </div>
+<footer class="container-fluid text-center">
+    <p class="salonName">Korona Hair Salon</p>
+    <address>45 Rockefeller Plaza, New York, NY 10111</address>
+    <p><small>Copyright © <span id="year"></span> Korona Hair Salon. All rights reserved.<br>
+        <span class="small">Designed and created by:
+			<a href="../../index.html" target="_blank">Bernadette Engleman</a><small>&#128279;</small>
+		</span>
+    </small></p>
 </footer>
 
 <script src="js/jquery.js"></script>
