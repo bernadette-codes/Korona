@@ -309,9 +309,6 @@ footer p a:hover {
 		width: 75%;
 	}
 }
-@media screen and (max-width: 879px) {
-
-}
 @media screen and (max-width: 767px) {
 	.brandimg {
 		width: 200px;
@@ -371,8 +368,6 @@ footer p a:hover {
 	#overlayContent img {
 		width: 95%;
 	}
-}
-@media screen and (max-width: 500px) {
 }
 @media screen and (max-width: 450px) {
 	nav#navbarbtn ul a {
