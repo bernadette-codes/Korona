@@ -9,6 +9,7 @@
 	<meta name="description" content="hair salon website">
 	<meta name="keywords" content="website project, bootstrap project">
 	<meta name="author" content="Bernadette Engleman">
+	<link rel="shortcut icon" href="../../img/beIcon.png">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="stylesheet.css">
 </head>
@@ -16,38 +17,37 @@
 <body>
 
 <!-- Header -->
-<nav class="container">
+<header class="container-fluid">
+	<h1>Korona Hair Salon</h1>
 
 	<!-- Brand Image-->
-	<div>
-		<img src="img/korona.jpg" alt="Korona Hair Salon Logo" width="250" class="img-responsive brandimg">
-	</div>
+	<img src="img/korona.jpg" alt="Korona Hair Salon Logo" width="250" class="img-responsive brandimg">
 
 	<!-- Menu -->
-	<div class="menuHolder">
+	<nav class="container-fluid" id="navbarbtn">
 		<ul>
+			<li><a href="index.html">Home</a></li>
 			<li><a href="salon.html">Salon</a></li>
 			<li><a href="services.html">Services</a></li>
 			<li><a href="hairstyle.html">Hairstyles</a></li>
 		</ul>
-	</div>
+	</nav>
+</header>
 
-</nav>
-
-<!-- Photo Slideshow -->
-<div class="container slideshow">
-	<div id="carousel">
-		<figure><img src="img/salon1.jpg" alt="Korona Salon"></figure>
-		<figure><img src="img/salon4.jpg" alt="Korona Salon"></figure>
-		<figure><img src="img/salon1.jpg" alt="Korona Salon"></figure>
-		<figure><img src="img/salon3.jpg" alt="Korona Salon"></figure>
-		<figure><img src="img/salon2.jpg" alt="Korona Salon"></figure>
+<main class="container">
+	<div class="slideshow">
+		<img src="img/salon1.jpg" alt="Korona Salon" class="img-responsive" id="img1">
+		<img src="img/salon3.jpg" alt="Korona Salon" class="img-responsive" id="img3">
+		<img src="img/salon4.jpg" alt="Korona Salon" class="img-responsive" id="img4">
+		<img src="img/salon2.jpg" alt="Korona Salon" class="img-responsive" id="img2">
+		<img src="img/salon1.jpg" alt="Korona Salon" class="img-responsive" id="img5">
 	</div>
-</div>
+</main>
 
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/korona.js"></script>
+
 </body>
 
 </html>
