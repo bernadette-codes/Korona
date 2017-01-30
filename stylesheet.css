@@ -244,6 +244,13 @@ main h2 {
 	margin-left: -40px;
 }
 
+.hide-bullets a:hover,
+.hide-bullets a:focus {
+	outline: hidden;
+	border-color: #5b5b5b;
+	box-sizing: border-box;
+}
+
 .thumbnail {
 	padding: 0;
 }
