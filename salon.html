@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="korona">
 
 <head>
 	<meta charset="utf-8">
@@ -12,6 +12,7 @@
 	<link rel="shortcut icon" href="../../img/beIcon.png">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="stylesheet.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </head>
 
 <body>
@@ -35,20 +36,13 @@
 </header>
 
 <!-- Content -->
-<main class="container background text-center">
+<main ng-controller="salonPhotosController as salonPhotos" class="container background text-center">
 	<h2>Our Salon</h2>
 
 	<!-- Salon Photos top-->
 	<div class="row grid">
-		<div class="col-xs-6">
-			<div class="thumbnail">
-				<img src="img/salon1.jpg" alt="Salon1" class="img-responsive">
-			</div>
-		</div>
-		<div class="col-xs-6">
-			<div class="thumbnail">
-				<img src="img/salon2.jpg" alt="Salon2" class="img-responsive">
-			</div>
+		<div ng-repeat="salonPhotos in photoTop" class="col-xs-6">
+			<div salon-photos></div>
 		</div>
 	</div>
 	<div id="overlay"></div>
@@ -71,15 +65,8 @@
 
 	<!-- Salon Photos bottom-->
 	<div class="row grid">
-		<div class="col-xs-6">
-			<div class="thumbnail">
-				<img src="img/salon3.jpg" alt="Salon1" class="img-responsive">
-			</div>
-		</div>
-		<div class="col-xs-6">
-			<div class="thumbnail">
-				<img src="img/salon4.jpg" alt="Salon2" class="img-responsive">
-			</div>
+		<div ng-repeat="salonPhotos in photoBottom" class="col-xs-6">
+			<div salon-photos></div>
 		</div>
 	</div>
 </main>
@@ -98,6 +85,8 @@
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/korona.js"></script>
+<!-- AngularJS App -->
+<script src="js/app.js"></script>
 
 </body>
 
