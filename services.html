@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="korona">
 
 <head>
 	<meta charset="utf-8">
@@ -12,6 +12,7 @@
 	<link rel="shortcut icon" href="../../img/beIcon.png">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="stylesheet.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </head>
 
 <body>
@@ -38,46 +39,21 @@
 <main class="container background">
 	<h2 class="text-center">Services</h2>
 
-	<div class="row">
+	<div ng-controller="servicesController as service" class="row">
 		<!-- Image -->
 		<div class="col-md-3 hidden-sm hidden-xs">
 			<img src="img/services.jpg" alt="Services" class="servicesphoto">
 		</div>
 
-		<!-- HAIRCUTS & STYLING -->
-		<section class="col-md-4 col-sm-6 col-xs-12">
-			<h3 class="text-center">HAIRCUTS & STYLING</h3>
+		<section ng-repeat="service in serviceslist" class="col-md-4 col-sm-6 col-xs-12">
+			<h3 class="text-center">{{service.type | uppercase}}</h3>
 
 			<ul class="services">
-				<li>Short Haircut <span class="prices">65</span></li>
-				<li>Long Haircut <span class="prices">85</span></li>
-				<li>Bang Trim <span class="prices">10</span></li>
-				<li>Wash & Blow Dry <span class="prices">40</span></li>
-				<li>Flat/Curling Iron <span class="prices">10**</span></li>
-				<li>Blow Dry with Color <span class="prices">20**</span></li>
-				<li>Up-do <span class="prices">80*</span></li>
-				<li>Body Wave Perm <span class="prices">85*</span></li>
-				<li>Small Curl <span class="prices">100*</span></li>
-				<li>Japanese Straight <span class="prices">300*</span></li>
-			</ul>
-		</section>
-
-		<!-- COLOR & TREATMENTS -->
-		<section class="col-md-4 col-sm-6 col-xs-12">
-			<h3 class="text-center">COLOR & TREATMENTS</h3>
-
-			<ul class="services">
-				<li>Single Process Color <span class="prices">95*</span></li>
-				<li>Double Process Color <span class="prices">140*</span></li>
-				<li>Touch Up <span class="prices">80</span></li>
-				<li>Color Gloss/Clear-Shine <span class="prices">75*</span></li>
-				<li>Highlights <span class="prices">100*</span></li>
-				<li>Deep Conditioning <span class="prices">50*</span></li>
-				<li>Keratin Treatment <span class="prices">350*</span></li>
+				<li ng-repeat="list in service.lists">{{list[0]}} <span class="prices">{{list[1]}}</span></li>
 			</ul>
 
-			<p>*prices starting from</p>
-			<p>**additional</p>
+			<br>
+			<p>{{service.info}}</p>
 		</section>
 	</div>
 </main>
@@ -96,6 +72,8 @@
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/korona.js"></script>
+<!-- AngularJS App -->
+<script src="js/app.js"></script>
 
 </body>
 
