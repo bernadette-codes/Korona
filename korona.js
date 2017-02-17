@@ -17,7 +17,7 @@ $(document).ready(function(){
     //alert(windowWidth);
 
     // Show Bigger Photos
-    $(".grid img").click(function(){
+    $(".grid").find("img").click(function(){
         $imgBig.attr("src",$(this).prop('src'));
         $overlay.show(350);
         $overlayContent.show(350);
