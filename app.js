@@ -47,23 +47,22 @@
         ]
     });
 
-    /*
     app.controller('hairstylesController', function($scope){
         $scope.gallery = [
-            { name: 'Women Hairstyle Shoulder Length', photo: 'img/hairtsyle1.jpg'},
-            { name: 'Women Hairstyle Shoulder Length', photo: 'img/hairtsyle2.jpg'},
-            { name: 'Women Hairstyle Shoulder Length', photo: 'img/hairtsyle3.jpg'},
-            { name: 'Women Hairstyle Long', photo: 'img/hairtsyle4.jpg'},
-            { name: 'Women Hairstyle Long', photo: 'img/hairtsyle5.jpg'},
-            { name: 'Women Hairstyle Long', photo: 'img/hairtsyle6.jpg'},
-            { name: 'Men Hairstyle', photo: 'img/hairtsyle12.jpg'},
-            { name: 'Men Hairstyle', photo: 'img/hairtsyle7.jpg'},
-            { name: 'Men Hairstyle', photo: 'img/hairtsyle11.jpg'},
-            { name: 'Men Hairstyle', photo: 'img/hairtsyle8.jpg'},
-            { name: 'Men Hairstyle', photo: 'img/hairtsyle10.jpg'},
-            { name: 'Men Hairstyle', photo: 'img/hairtsyle9.jpg'}
+            { name: 'Women Hairstyle Shoulder Length', photo: 'img/hairtsyle1.jpg', slideNum: 0, note: 'active item'},
+            { name: 'Women Hairstyle Shoulder Length', photo: 'img/hairtsyle2.jpg', slideNum: 1, note: 'item'},
+            { name: 'Women Hairstyle Shoulder Length', photo: 'img/hairtsyle3.jpg', slideNum: 2, note: 'item'},
+            { name: 'Women Hairstyle Long', photo: 'img/hairtsyle4.jpg', slideNum: 3, note: 'item'},
+            { name: 'Women Hairstyle Long', photo: 'img/hairtsyle5.jpg', slideNum: 4, note: 'item'},
+            { name: 'Women Hairstyle Long', photo: 'img/hairtsyle6.jpg', slideNum: 5, note: 'item'},
+            { name: 'Men Hairstyle', photo: 'img/hairtsyle12.jpg', slideNum: 6, note: 'item'},
+            { name: 'Men Hairstyle', photo: 'img/hairtsyle7.jpg', slideNum: 7, note: 'item'},
+            { name: 'Men Hairstyle', photo: 'img/hairtsyle11.jpg', slideNum: 8, note: 'item'},
+            { name: 'Men Hairstyle', photo: 'img/hairtsyle8.jpg', slideNum: 9, note: 'item'},
+            { name: 'Men Hairstyle', photo: 'img/hairtsyle10.jpg', slideNum: 10, note: 'item'},
+            { name: 'Men Hairstyle', photo: 'img/hairtsyle9.jpg', slideNum: 11, note: 'item'}
         ];
-    });*/
+    });
 
     app.directive('salonPhotos', function(){
         return {
