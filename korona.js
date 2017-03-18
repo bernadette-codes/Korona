@@ -12,8 +12,7 @@ $(document).ready(function(){
         $overlayContent = $("#overlayContent"),
         $myCarousel = $("#myCarousel");
 
-    // Window Height
-    $(window).height(windowHeight+"px");
+
     //alert(windowWidth);
 
     // Show Bigger Photos
