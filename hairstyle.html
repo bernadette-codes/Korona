@@ -98,7 +98,7 @@
             <ul class="hide-bullets" ng-repeat="slider in gallery">
                 <li class="col-xs-6 col-sm-4">
                     <a class="thumbnail" id="carousel-selector-{{slider.slideNum}}">
-                        <img src="{{slider.photo}}" alt="{{slider.name}}">
+                        <img ng-src="{{slider.photo}}" alt="{{slider.name}}">
                     </a>
                 </li>
             </ul>
