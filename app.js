@@ -2,73 +2,79 @@
 (function(){
     var app = angular.module('korona', []);
 
+    app.controller('homeController', ['$scope', '$http', function($scope, $http){
+
+        $http.get('data/photoShow.json').success(function(data){
+            $scope.photoShow = data;
+        });
+
+    }]);
+
     app.controller('salonPhotosController', function($scope){
         $scope.photoTop = [
-            { alt: 'Salon1', photo: '../img/salon1.jpg'},
-            { alt: 'Salon2', photo: '../img/salon2.jpg'}
+            { alt: 'Salon1', photo: '../img/salon1.jpg' },
+            { alt: 'Salon2', photo: '../img/salon2.jpg' }
         ];
         $scope.photoBottom = [
-            { alt: 'Salon3', photo: '../img/salon3.jpg'},
-            { alt: 'Salon4', photo: '../img/salon4.jpg'}
+            { alt: 'Salon3', photo: '../img/salon3.jpg' },
+            { alt: 'Salon4', photo: '../img/salon4.jpg' }
         ];
     });
 
-    app.controller('servicesController', function($scope){
-        $scope.serviceslist = [
-            {
-                type: 'Haircuts & Styling',
-                lists: [
-                    ['Short Haircut', '$65'],
-                    ['Long Haircut', '$85'],
-                    ['Bang Trim', '$10'],
-                    ['Wash & Blow Dry', '$40'],
-                    ['Flat/Curling Iron', '$10**'],
-                    ['Blow Dry with Color', '$20**'],
-                    ['Up-do', '$80*'],
-                    ['Body Wave Perm', '$85*'],
-                    ['Small Curl', '$100*'],
-                    ['Japanese Straight', '$300*']
-                ],
-                info: '**additional'
-            },
-            {
-                type: 'Color & Treatment',
-                lists: [
-                    ['Single Process Color', '$95*'],
-                    ['Double Process Color', '$140*'],
-                    ['Touch Up', '$80'],
-                    ['Color Gloss/Clear-Shine', '$75*'],
-                    ['Highlights', '$100*'],
-                    ['Deep Conditioning', '$50*'],
-                    ['Keratin Treatment', '$350*']
-                ],
-                info: '*prices starting from'
-            }
-        ]
-    });
+    /*
+    app.controller('salonPhotosController', ['$scope', '$http', function($scope, $http){
+
+        $http.get('../data/photoTop.json').success(function(data){
+            $scope.photoTop = data;
+        });
+
+        $http.get('../data/photoBottom.json').success(function(data){
+            $scope.photoBottom = data;
+        });
+
+    }]);
+    */
+
+    app.controller('servicesController', ['$scope', '$http', function($scope, $http){
+
+        $http.get('../data/salonServices.json').success(function(data){
+            $scope.serviceslist = data;
+        });
+
+    }]);
 
     app.controller('hairstylesController', function($scope){
         $scope.gallery = [
-            { name: 'Women Hairstyle Shoulder Length', photo: '../img/hairtsyle1.jpg', slideNum: 0},
-            { name: 'Women Hairstyle Shoulder Length', photo: '../img/hairtsyle2.jpg', slideNum: 1},
-            { name: 'Women Hairstyle Shoulder Length', photo: '../img/hairtsyle3.jpg', slideNum: 2},
-            { name: 'Women Hairstyle Long', photo: '../img/hairtsyle4.jpg', slideNum: 3},
-            { name: 'Women Hairstyle Long', photo: '../img/hairtsyle5.jpg', slideNum: 4},
-            { name: 'Women Hairstyle Long', photo: '../img/hairtsyle6.jpg', slideNum: 5},
-            { name: 'Men Hairstyle', photo: '../img/hairtsyle12.jpg', slideNum: 6},
-            { name: 'Men Hairstyle', photo: '../img/hairtsyle7.jpg', slideNum: 7},
-            { name: 'Men Hairstyle', photo: '../img/hairtsyle11.jpg', slideNum: 8},
-            { name: 'Men Hairstyle', photo: '../img/hairtsyle8.jpg', slideNum: 9},
-            { name: 'Men Hairstyle', photo: '../img/hairtsyle10.jpg', slideNum: 10},
-            { name: 'Men Hairstyle', photo: '../img/hairtsyle9.jpg', slideNum: 11}
+            { name: 'Women Hairstyle Shoulder Length', photo: '../img/hairtsyle1.jpg', slideNum: 0 },
+            { name: 'Women Hairstyle Shoulder Length', photo: '../img/hairtsyle2.jpg', slideNum: 1 },
+            { name: 'Women Hairstyle Shoulder Length', photo: '../img/hairtsyle3.jpg', slideNum: 2 },
+            { name: 'Women Hairstyle Long', photo: '../img/hairtsyle4.jpg', slideNum: 3 },
+            { name: 'Women Hairstyle Long', photo: '../img/hairtsyle5.jpg', slideNum: 4 },
+            { name: 'Women Hairstyle Long', photo: '../img/hairtsyle6.jpg', slideNum: 5 },
+            { name: 'Men Hairstyle', photo: '../img/hairtsyle12.jpg', slideNum: 6 },
+            { name: 'Men Hairstyle', photo: '../img/hairtsyle7.jpg', slideNum: 7 },
+            { name: 'Men Hairstyle', photo: '../img/hairtsyle11.jpg', slideNum: 8 },
+            { name: 'Men Hairstyle', photo: '../img/hairtsyle8.jpg', slideNum: 9 },
+            { name: 'Men Hairstyle', photo: '../img/hairtsyle10.jpg', slideNum: 10 },
+            { name: 'Men Hairstyle', photo: '../img/hairtsyle9.jpg', slideNum: 11 }
         ];
     });
+
+    /*
+    app.controller('hairstylesController', ['$scope', '$http', function($scope, $http){
+
+        $http.get('../data/gallery.json').success(function(data){
+            $scope.gallery = data;
+        });
+
+    }]);
+    */
 
     app.directive('salonPhotos', function(){
         return {
             template:
             '<div class="thumbnail">' +
-                '<img ng-src="{{salonPhotos.photo}}" alt="{{salonPhotos.alt}}" class="img-responsive">' +
+            '<img ng-src="{{salonPhotos.photo}}" alt="{{salonPhotos.alt}}" class="img-responsive">' +
             '</div>'
         };
     });
