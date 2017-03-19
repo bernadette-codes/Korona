@@ -1,0 +1,31 @@
+[
+  {
+    "type":"Haircuts & Styling",
+    "lists":[
+      ["Short Haircut","$65"],
+      ["Long Haircut","$85"],
+      ["Bang Trim","$10"],
+      ["Wash & Blow Dry","$40"],
+      ["Flat/Curling Iron","$10**"],
+      ["Blow Dry with Color","$20**"],
+      ["Up-do","$80*"],
+      ["Body Wave Perm","$85*"],
+      ["Small Curl","$100*"],
+      ["Japanese Straight","$300*"]
+    ],
+    "info":"**additional"
+  },
+  {
+    "type":"Color & Treatment",
+    "lists":[
+      ["Single Process Color","$95*"],
+      ["Double Process Color","$140*"],
+      ["Touch Up","$80"],
+      ["Color Gloss/Clear-Shine","$75*"],
+      ["Highlights","$100*"],
+      ["Deep Conditioning","$50*"],
+      ["Keratin Treatment","$350*"]
+    ],
+    "info":"*prices starting from"
+  }
+]
