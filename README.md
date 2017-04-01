@@ -1,18 +1,22 @@
-Hair Salon
 
-Description: This website was built using HTML, CSS and Bootstrap.
+**Korona**
+--------------------
 
-Link: http://www.bernadetteengleman.com/Websites/Korona%20Hair%20Salon/index.html
+[Korona](http://www.bernadetteengleman.com/Websites/Korona%20Hair%20Salon/index.html)  is a responsive 4-webpage hair salon websites built as personal project.
 
-Outline:
-Page 1 - Landing Page
-Page 2 - Salon 
-h2: Our Salon
-     h3: Location
-     h3: Hours
-Page 3 - Services
-h2: Services
-     h3: Hairuts & Styling
-     h3: Color & Treatments
-Page 4 - Hairstyles
+![Korona Webpage](http://www.bernadetteengleman.com/img/portfolio/koronathumbnail.jpg)
 
+![Korona Webpage](http://www.bernadetteengleman.com/img/portfolio/koronathumbnail2.jpg)
+
+ - Utilizes AngularJS $http Service to provide data from JSON API for list of services and photos
+ - Uses AngularJS Custom Directives for list of services and photos
+
+
+
+**Front-End:**
+
+ - AngularJS
+ - JavaScript
+ - Bootstrap
+ - CSS3
+ - HTML5
