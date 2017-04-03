@@ -2,7 +2,7 @@
 (function(){
     var app = angular.module('korona', []);
 
-    app.controller('homeController', ['$scope', '$http', function($scope, $http){
+    app.controller('HomeController', ['$scope', '$http', function($scope, $http){
 
         $http.get('data/photoShow.json').success(function(data){
             $scope.photoShow = data;
@@ -10,7 +10,7 @@
 
     }]);
 
-    app.controller('salonPhotosController', function($scope){
+    app.controller('SalonPhotosController', function($scope){
         $scope.photoTop = [
             { alt: 'Salon1', photo: '../img/salon1.jpg' },
             { alt: 'Salon2', photo: '../img/salon2.jpg' }
@@ -22,20 +22,20 @@
     });
 
     /*
-    app.controller('salonPhotosController', ['$scope', '$http', function($scope, $http){
+     app.controller('SalonPhotosController', ['$scope', '$http', function($scope, $http){
 
-        $http.get('../data/photoTop.json').success(function(data){
-            $scope.photoTop = data;
-        });
+     $http.get('../data/photoTop.json').success(function(data){
+     $scope.photoTop = data;
+     });
 
-        $http.get('../data/photoBottom.json').success(function(data){
-            $scope.photoBottom = data;
-        });
+     $http.get('../data/photoBottom.json').success(function(data){
+     $scope.photoBottom = data;
+     });
 
-    }]);
-    */
+     }]);
+     */
 
-    app.controller('servicesController', ['$scope', '$http', function($scope, $http){
+    app.controller('ServicesController', ['$scope', '$http', function($scope, $http){
 
         $http.get('../data/salonServices.json').success(function(data){
             $scope.serviceslist = data;
@@ -43,7 +43,7 @@
 
     }]);
 
-    app.controller('hairstylesController', function($scope){
+    app.controller('HairstylesController', function($scope){
         $scope.gallery = [
             { name: 'Women Hairstyle Shoulder Length', photo: '../img/hairtsyle1.jpg', slideNum: 0 },
             { name: 'Women Hairstyle Shoulder Length', photo: '../img/hairtsyle2.jpg', slideNum: 1 },
@@ -61,14 +61,14 @@
     });
 
     /*
-    app.controller('hairstylesController', ['$scope', '$http', function($scope, $http){
+     app.controller('HairstylesController', ['$scope', '$http', function($scope, $http){
 
-        $http.get('../data/gallery.json').success(function(data){
-            $scope.gallery = data;
-        });
+     $http.get('../data/gallery.json').success(function(data){
+     $scope.gallery = data;
+     });
 
-    }]);
-    */
+     }]);
+     */
 
     app.directive('salonPhotos', function(){
         return {
