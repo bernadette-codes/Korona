@@ -28,6 +28,10 @@ body {
 	padding: 0 0 100px;
 }
 
+a:focus {
+	outline: none;
+}
+
 /* Header */
 h1 {
 	position: absolute;
