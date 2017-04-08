@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="korona">
 
 <head>
 	<meta charset="utf-8">
@@ -7,11 +7,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Korona Hair Salon</title>
 	<meta name="description" content="hair salon website">
-	<meta name="keywords" content="website project, bootstrap project">
+	<meta name="keywords" content="website project, Bootstrap project, AngularJS project">
 	<meta name="author" content="Bernadette Engleman">
 	<link rel="shortcut icon" href="../../img/beIcon.png">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/stylesheet.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
 </head>
 
 <body>
@@ -35,18 +36,18 @@
 </header>
 
 <main class="container">
-	<div class="slideshow">
-		<img src="img/salon1.jpg" alt="Korona Salon" class="img-responsive" id="img1">
-		<img src="img/salon3.jpg" alt="Korona Salon" class="img-responsive" id="img3">
-		<img src="img/salon4.jpg" alt="Korona Salon" class="img-responsive" id="img4">
-		<img src="img/salon2.jpg" alt="Korona Salon" class="img-responsive" id="img2">
-		<img src="img/salon1.jpg" alt="Korona Salon" class="img-responsive" id="img5">
+	<div ng-controller="HomeController as photos" >
+		<div ng-repeat="photos in photoShow" class="slideshow">
+			<img ng-src="{{photos.src}}" alt="Korona Salon" class="img-responsive" id="{{photos.id}}">
+		</div>
 	</div>
 </main>
 
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/korona.js"></script>
+<!-- AngularJS App -->
+<script src="js/app.js"></script>
 
 </body>
 
