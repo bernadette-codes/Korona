@@ -17,6 +17,7 @@
 
  - AngularJS
  - JavaScript
+ - jQuery 
  - Bootstrap
  - CSS3
  - HTML5
