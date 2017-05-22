@@ -2,7 +2,7 @@
 **Korona**
 --------------------
 
-[Korona](http://www.bernadetteengleman.com/Websites/Korona/index.html)  is a responsive hair salon websites built as personal project.
+[Korona](http://www.bernadetteengleman.com/Websites/Korona/index.html) is a responsive hair salon website built as personal project.
 
 ![Korona Webpage](http://www.bernadetteengleman.com/img/portfolio/koronathumbnail.jpg)
 
@@ -10,7 +10,6 @@
 
  - Utilizes AngularJS $http Service to provide data from JSON API for list of services and photos
  - Uses AngularJS Custom Directives for list of services and photos
-
 
 
 **Front-End:**
