@@ -1,16 +1,16 @@
 
-(function(){
+(function () {
     var app = angular.module('korona', []);
 
-    app.controller('HomeController', ['$scope', '$http', function($scope, $http){
+    app.controller('HomeController', ['$scope', '$http', function ($scope, $http) {
 
-        $http.get('data/photoShow.json').success(function(data){
+        $http.get('data/photoShow.json').success(function (data) {
             $scope.photoShow = data;
         });
 
     }]);
 
-    app.controller('SalonPhotosController', function($scope){
+    app.controller('SalonPhotosController', function ($scope) {
         $scope.photoTop = [
             { alt: 'Salon1', photo: '../img/salon1.jpg' },
             { alt: 'Salon2', photo: '../img/salon2.jpg' }
@@ -35,15 +35,15 @@
      }]);
      */
 
-    app.controller('ServicesController', ['$scope', '$http', function($scope, $http){
+    app.controller('ServicesController', ['$scope', '$http', function ($scope, $http) {
 
-        $http.get('../data/salonServices.json').success(function(data){
+        $http.get('../data/salonServices.json').success(function (data) {
             $scope.serviceslist = data;
         });
 
     }]);
 
-    app.controller('HairstylesController', function($scope){
+    app.controller('HairstylesController', function ($scope) {
         $scope.gallery = [
             { name: 'Women Hairstyle Shoulder Length', photo: '../img/hairtsyle1.jpg', slideNum: 0 },
             { name: 'Women Hairstyle Shoulder Length', photo: '../img/hairtsyle2.jpg', slideNum: 1 },
@@ -69,14 +69,5 @@
 
      }]);
      */
-
-    app.directive('salonPhotos', function(){
-        return {
-            template:
-            '<div class="thumbnail">' +
-            '<img ng-src="{{salonPhotos.photo}}" alt="{{salonPhotos.alt}}" class="img-responsive">' +
-            '</div>'
-        };
-    });
 
 })();

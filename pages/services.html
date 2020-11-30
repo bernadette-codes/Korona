@@ -1,79 +1,118 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="korona">
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Services | Korona Hair Salon</title>
-	<meta name="description" content="hair salon website">
-	<meta name="keywords" content="website project, Bootstrap project, AngularJS project">
+	<meta name="description" content="Korona hair salon website">
+	<meta name="keywords" content="Koronmo hair salon">
 	<meta name="author" content="Bernadette Estacio">
-	<link rel="shortcut icon" href="../../../img/beIcon.png">
-	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/stylesheet.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </head>
 
 <body>
 
-<!-- Header -->
-<header class="container-fluid">
-	<h1>Korona Hair Salon</h1>
+	<header class="container-fluid">
+		<h1>Korona Hair Salon</h1>
 
-	<!-- Brand Image-->
-	<img src="../img/korona.jpg" alt="Korona Hair Salon Logo" width="250" class="img-responsive brandimg">
+		<img src="../img/korona.jpg" alt="Korona Hair Salon Logo" width="250" class="img-responsive brandimg">
 
-	<!-- Menu -->
-	<nav class="container-fluid" id="navbarbtn">
-		<ul>
-			<li><a href="../index.html">Home</a></li>
-			<li><a href="salon.html">Salon</a></li>
-			<li><a href="services.html">Services</a></li>
-			<li><a href="hairstyle.html">Hairstyles</a></li>
-		</ul>
-	</nav>
-</header>
-
-<!-- Pricelist -->
-<main class="container background">
-	<h2 class="text-center">Services</h2>
-
-	<div ng-controller="servicesController as service" class="row">
-		<!-- Image -->
-		<div class="col-md-3 hidden-sm hidden-xs">
-			<img src="../img/services.jpg" alt="Services" class="servicesphoto">
-		</div>
-
-		<section ng-repeat="service in serviceslist" class="col-md-4 col-sm-6 col-xs-12">
-			<h3 class="text-center">{{service.type | uppercase}}</h3>
-
-			<ul class="services">
-				<li ng-repeat="list in service.lists">{{list[0]}} <span class="prices">{{list[1]}}</span></li>
+		<nav class="container-fluid" id="navbarbtn">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="salon.html">Salon</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="hairstyle.html">Hairstyles</a></li>
 			</ul>
+		</nav>
+	</header>
 
-			<br>
-			<p>{{service.info}}</p>
-		</section>
-	</div>
-</main>
+	<!-- Pricelist -->
+	<main class="container background">
+		<h2 class="text-center">Services</h2>
 
-<!-- Footer -->
-<footer class="container-fluid text-center">
-	<p class="salonName">Korona Hair Salon</p>
-	<address>45 Rockefeller Plaza, New York, NY 10111</address>
-	<p><small>Copyright © <span id="year"></span> Korona Hair Salon. All rights reserved.<br>
-		<span class="small">Designed and created by:
-			<a href="../../../index.html" target="_blank">Bernadette Estacio</a><small>&#128279;</small>
-		</span>
-	</small></p>
-</footer>
+		<div class="row">
+			<!-- Image -->
+			<!-- <div class="col-md-3 hidden-sm hidden-xs">
+				<img src="../img/services.jpg" alt="Services" class="servicesphoto">
+			</div> -->
 
-<script src="../js/jquery.js"></script>
-<script src="../js/bootstrap.js"></script>
-<script src="../js/korona.js"></script>
-<!-- AngularJS App -->
-<script src="../js/app.js"></script>
+			<section class="col-md-6 col-xs-12">
+				<h3 class="text-center">Haircuts & Styling</h3>
+
+				<ul class="services">
+					<li>Haircut <span class="prices">P200+</span></li>
+					<li>Shampoo & Blowdry <span class="prices">P150</span></li>
+					<li>Iron/Curling <span class="prices">P550</span></li>
+				</ul>
+			</section>
+
+			<section class="col-md-6 col-xs-12">
+				<h3 class="text-center">Hair Color</h3>
+
+				<ul class="services">
+					<li>Cellophane (deluxe) <span class="prices">P1,800</span></li>
+					<li>Cellophane (premium) <span class="prices">P2,100</span></li>
+					<li>Highlights (deluxe) <span class="prices">P2,000</span></li>
+					<li>Highlights (premium) <span class="prices">P2,200</span></li>
+					<li>Highlights cap <span class="prices">P1,500</span></li>
+					<li>Highlights foil <span class="prices">P2,000</span></li>
+				</ul>
+			</section>
+
+			<section class="col-md-6 col-xs-12">
+				<h3 class="text-center">Straightening and Perming</h3>
+
+				<ul class="services">
+					<li>Hair Relax (deluxe) <span class="prices">P2,800</span></li>
+					<li>Hair Relax (premium) <span class="prices">P3,500</span></li>
+					<li>Hair Rebond (deluxe) <span class="prices">P3,800</span></li>
+					<li>Hair Rebond (premium) <span class="prices">P4,500</span></li>
+					<li>Traditional (deluxe) <span class="prices">P2,000</span></li>
+					<li>Traditional (premium) <span class="prices">P2,200</span></li>
+				</ul>
+			</section>
+
+			<section class="col-md-6 col-xs-12">
+				<h3 class="text-center">Treatments</h3>
+
+				<ul class="services">
+					<li>Regular Treatment <span class="prices">P600</span></li>
+					<li>Organic <span class="prices">P950</span></li>
+					<li>Hair Spa w/ vials <span class="prices">P1,500</span></li>
+					<li>Hair Spa w/ cream <span class="prices">P1,200</span></li>
+					<li>Collagen Hair Spa <span class="prices">P1,200</span></li>
+					<li>Powermix <span class="prices">P1,800</span></li>
+					<li>Keratherapy express <span class="prices">P1,500</span></li>
+					<li>Keratherapy extreme <span class="prices">P3,300</span></li>
+					<li>D2 Treatment (vial) <span class="prices">P1,400</span></li>
+					<li>Fusio Dose <span class="prices">P2,500</span></li>
+					<li>Keratin (deluxe) <span class="prices">P2,000</span></li>
+					<li>Keratin(premium) <span class="prices">P5,000</span></li>
+				</ul>
+			</section>
+		</div>
+	</main>
+
+	<footer class="container-fluid text-center">
+		<p class="salonName">Korona Hair Salon</p>
+		<address>BF Resort Drive, Talon Uno, Las Pinas</address>
+		<p>© <span id="year"></span> Korona Hair Salon<br>
+			<span class="small">Designed and created by:
+				<a href="https://bernadetteestacio.site/" target="_blank">Bernadette Estacio</a><small>&#128279;
+			</span>
+			</small></p>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="../js/korona.js"></script>
+	<!-- AngularJS App -->
+	<script src="../js/app.js"></script>
 
 </body>
 

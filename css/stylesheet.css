@@ -41,7 +41,7 @@ h1 {
 /* Brand Image */
 .brandimg {
 	display: block;
-	margin: 10px auto;
+	margin: 20px auto;
 }
 
 /* Nav bar */
@@ -50,36 +50,28 @@ nav#navbarbtn {
 	padding: 0;
 	margin: 0;
 	border: none;
-	border-bottom: 3px solid #BEBEBE;
 }
 
 nav#navbarbtn ul {
-	display: block;
-	width: 50%;
-	padding: 0;
-	margin: 0 auto;
-	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 nav#navbarbtn ul li {
-	width: 22%;
-	float: left;
 	list-style: none;
-	text-align: center;
+	/* text-align: center; */
 	margin-bottom: 10px;
 }
 
-nav#navbarbtn ul li:nth-child(3),
-nav#navbarbtn ul li:nth-child(4){
-	width: 28%;
-}
 
 nav#navbarbtn ul a {
+	font-family: 'DM Serif Text', serif;
 	font-size: 20px;
 	font-weight: 600;
-	font-family: Arial, Tahoma, sans-serif;
 	color: #5f5f5f;
 	padding: 5px 15px;
+	text-decoration: none;
 }
 
 nav#navbarbtn ul a:hover,
@@ -160,7 +152,7 @@ main.background {
 }
 
 main h2 {
-	margin-bottom: 25px;
+	margin-bottom: 50px;
 }
 
 /* Salon */
@@ -192,10 +184,11 @@ main h2 {
 }
 
 #overlayContent {
-	position: fixed;
+	position: absolute;
+  left: 50%;
+  right: 50%;
+	transform: translate(-50%, -50%);
 	width: 100%;
-	top: 100px;
-	left: 0;
 	text-align: center;
 	display: none;
 	overflow: hidden;
@@ -203,7 +196,7 @@ main h2 {
 }
 
 #overlayContent img {
-	width: 50%;
+	width: 70%;
 }
 
 /* Services */
@@ -257,6 +250,7 @@ main h2 {
 
 .thumbnail {
 	padding: 0;
+	border: none;
 }
 
 .thumbnail img,

@@ -2,7 +2,7 @@
 **Korona**
 --------------------
 
-[Korona](http://www.bernadetteengleman.com/Websites/Korona/index.html) is a responsive hair salon website built as personal project.
+[Korona](http://www.bernadetteengleman.com/Websites/Korona/index.html) is a responsive hair salon website.
 
 ![Korona Webpage](http://www.bernadetteengleman.com/img/portfolio/koronathumbnail.jpg)
 
